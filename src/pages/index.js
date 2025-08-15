@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -62,6 +63,13 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <Link
+          href="/profile"
+          className="mt-4 rounded-full border border-solid border-black/[.08] dark:border-white/[.145] 
+                     px-4 py-2 hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] font-medium"
+        >
+          Go to My Profile Page
+        </Link>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
